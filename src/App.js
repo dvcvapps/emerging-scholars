@@ -1,28 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
+import MainNavbar from './components/MainNavbar.jsx';
+import Footer from './components/Footer.jsx';
+
+import Home from './screens/Home.jsx';
+import About from './screens/About.jsx';
+import BoardMembers from './screens/BoardMembers.jsx';
+import Donate from './screens/Donate.jsx';
 
 function App() {
   return (
-    <div>
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="#home">HOME</Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#features">About</Nav.Link>
-          <Nav.Link href="#pricing">Members</Nav.Link>
-
-        </Nav>
-        <Nav>
-          <Nav.Link >
-            DONATE
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
-    </div>
+    <Router>
+        <MainNavbar/>
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/donate">
+            <Donate />
+          </Route>
+          <Route path="/board_members">
+            <BoardMembers />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+        <Footer/>
+    </Router>
   );
 }
 
