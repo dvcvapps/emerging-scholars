@@ -1,36 +1,35 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
 
-import MainNavbar from './components/MainNavbar.jsx';
-import Footer from './components/Footer.jsx';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Home from './screens/Home.jsx';
-import About from './screens/About.jsx';
-import BoardMembers from './screens/BoardMembers.jsx';
-import Donate from './screens/Donate.jsx';
+import MainNavbar from './components/MainNavbar';
+import Footer from './components/Footer';
+
+import Home from './screens/Home';
+import About from './screens/About';
+import BoardMembers from './screens/BoardMembers';
+import Donate from './screens/Donate';
 
 function App() {
   return (
     <Router>
-        <MainNavbar/>
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/donate">
-            <Donate />
-          </Route>
-          <Route path="/board_members">
-            <BoardMembers />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-        <Footer/>
+      <MainNavbar />
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/donate">
+          <Donate />
+        </Route>
+        <Route path="/board_members">
+          <BoardMembers />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+      <Footer />
     </Router>
   );
 }
