@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Item({ text, href }) {
   return (
-    <Link to={href}>{text}</Link>
+    <Link className="text-white m-2 nounderline" to={href}>{text}</Link>
   );
 }
 Item.propTypes = {

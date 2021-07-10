@@ -1,19 +1,25 @@
 export const NAVBAR_SCHEMA = {
   home: {
-    text: 'home',
+    text: 'Home',
     href: '/home',
   },
   items: [
     {
       dropdown: false,
       isActive: false,
-      text: 'about',
+      text: 'About',
       href: '/about',
     },
     {
       dropdown: false,
       isActive: false,
-      text: 'donate',
+      text: 'Board Members',
+      href: '/board_members',
+    },
+    {
+      dropdown: false,
+      isActive: false,
+      text: 'Donate',
       href: '/donate',
     },
 
