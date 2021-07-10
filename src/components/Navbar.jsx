@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function Item({ text, href }) {
+function Item({ text, href, classNames }) {
+  const mainClasses = `${classNames}`;
   return (
-    <Link className="text-white m-2 nounderline" to={href}>{text}</Link>
+    <Link className={mainClasses} to={href}>{text}</Link>
   );
 }
 Item.propTypes = {
+  classNames: PropTypes.string,
   text: PropTypes.string,
   href: PropTypes.string,
 };
 Item.defaultProps = {
+  classNames: '',
   text: '',
   href: '',
 };
@@ -28,11 +31,12 @@ const defaultProps = {
 
 function Navbar({ children }) {
   return (
-    <div className="text-white bg-dark">
+    <div className="d-flex">
       {children}
     </div>
   );
 }
+
 Navbar.propTypes = propTypes;
 Navbar.defaultProps = defaultProps;
 

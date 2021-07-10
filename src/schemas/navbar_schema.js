@@ -16,14 +16,11 @@ export const NAVBAR_SCHEMA = {
       text: 'Board Members',
       href: '/board_members',
     },
-    {
-      dropdown: false,
-      isActive: false,
-      text: 'Donate',
-      href: '/donate',
-    },
-
   ],
+  donate: {
+    text: 'Donate',
+    href: '/donate',
+  },
 };
 
 export default {
