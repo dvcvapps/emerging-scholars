@@ -3,7 +3,7 @@ import React from 'react';
 
 function Contact() {
   return (
-    <div className="foo">
+    <div className="bg-secondary" style={{ height: 1000 }}>
       This is the Contact page.
     </div>
   );

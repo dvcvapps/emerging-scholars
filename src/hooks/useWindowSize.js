@@ -2,10 +2,10 @@
 import React, { useLayoutEffect, useState } from 'react';
 
 function useWindowSize() {
-  const [size, setSize] = useState([0, 0]);
+  const [size, setSize] = useState([0, 0, 0]);
   useLayoutEffect(() => {
     function updateSize() {
-      setSize([window.innerWidth, window.innerHeight]);
+      setSize([window.innerWidth, window.innerHeight, window.pageYOffset]);
     }
     window.addEventListener('resize', updateSize);
     updateSize();

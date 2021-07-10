@@ -11,25 +11,41 @@ import Navbar from '../Navbar';
 
 import { NAVBAR_SCHEMA } from '../../schemas/navbar_schema';
 import useWindowSize from '../../hooks/useWindowSize';
+import useScrollPosition from '../../hooks/useScrollPosition';
 
-const BREAKPOINT = 576;
+const WIDTH_BREAKPOINT = 576;
+const SCROLL_BREAKPOINT = 300;
 
 function MainNavbar() {
   const [open, setOpen] = useState(false);
   const [width] = useWindowSize();
-  const [mobile, setMobile] = useState(width < BREAKPOINT);
+  const [scroll] = useScrollPosition();
+  const [nav, setNav] = useState(scroll < SCROLL_BREAKPOINT);
+  const [mobile, setMobile] = useState(width < WIDTH_BREAKPOINT);
 
   useEffect(() => {
-    setMobile(width < BREAKPOINT);
-  }, [width]);
+    setNav(scroll < SCROLL_BREAKPOINT);
+    setMobile(width < WIDTH_BREAKPOINT);
+    console.log(scroll);
+  }, [width, scroll]);
+
+  const renderMenuIcon = () => (
+    <button type="button" className="d-sm-none btn btn-secondary" onClick={() => { setOpen(!open); }}>
+      {open
+        ? <FontAwesomeIcon className="text-white" icon={faTimes} />
+        : <FontAwesomeIcon className="text-white" icon={faBars} />}
+    </button>
+  );
 
   return (
-    <>
-      <Navbar>
+    <Navbar>
+      <Navbar.Main
+        bgColor={`${nav ? 'bg-dark' : 'bg-primary'}`}
+      >
         <Navbar.Item
           text={NAVBAR_SCHEMA.home.text}
           href={NAVBAR_SCHEMA.home.href}
-          classNames=" text-white p-1 nounderline me-auto"
+          classNames="text-white p-1 nounderline me-auto"
         />
         { _.map(NAVBAR_SCHEMA.items, (item) => (
           !mobile && (
@@ -37,7 +53,7 @@ function MainNavbar() {
             key={item.text}
             text={item.text}
             href={item.href}
-            classNames=" d-block text-white p-1 nounderline"
+            classNames="d-block text-white p-1 nounderline"
           />
           )
         ))}
@@ -46,29 +62,23 @@ function MainNavbar() {
           href={NAVBAR_SCHEMA.donate.href}
           classNames="text-warning p-1 nounderline"
         />
-        <button type="button" className="d-sm-none btn btn-secondary " onClick={() => { setOpen(!open); }}>
-          {
-          open
-            ? <FontAwesomeIcon className="text-white" icon={faTimes} />
-            : <FontAwesomeIcon className="text-white" icon={faBars} />
-        }
-        </button>
-      </Navbar>
+        { renderMenuIcon() }
+      </Navbar.Main>
       { mobile && open
         && (
-        <div className="bg-secondary">{_.map(NAVBAR_SCHEMA.items, (item) => (
+        <Navbar.Mobile>{_.map(NAVBAR_SCHEMA.items, (item) => (
           mobile && open && (
           <Navbar.Item
             key={item.text}
             text={item.text}
             href={item.href}
-            classNames="d-block  p-1 nounderline"
+            classNames="d-block p-1 nounderline text-white"
           />
           )
         ))}
-        </div>
+        </Navbar.Mobile>
         )}
-    </>
+    </Navbar>
   );
 }
 export default MainNavbar;
