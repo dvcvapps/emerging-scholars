@@ -13,7 +13,7 @@ import Donate from './screens/Donate';
 
 function App() {
   return (
-    <Router basename="base">
+    <Router>
       <MainNavbar />
       <Switch>
         <Route path="/contact">
