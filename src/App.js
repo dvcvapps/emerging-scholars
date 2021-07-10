@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 import MainNavbar from './components/custom/MainNavbar';
 import Footer from './components/Footer';
@@ -13,7 +13,7 @@ import Donate from './screens/Donate';
 
 function App() {
   return (
-    <Router>
+    <Router basename="base">
       <MainNavbar />
       <Switch>
         <Route path="/contact">
