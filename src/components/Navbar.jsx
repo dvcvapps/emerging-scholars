@@ -28,7 +28,7 @@ const defaultProps = {
 
 function Navbar({ children }) {
   return (
-    <div style={{ backgroundColor: 'black', color: 'white' }}>
+    <div className="text-white bg-dark">
       {children}
     </div>
   );

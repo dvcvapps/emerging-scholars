@@ -1,0 +1,24 @@
+$primary: blue;
+$secondary: gray;
+$success: green;
+$info: cyan;
+$warning: yellow;
+$danger: red;
+$light: white;
+$dark: black;
+
+$theme-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark,
+);
+
+
+@function theme-color($key: "primary") {
+    @return map-get($theme-colors, $key);
+}

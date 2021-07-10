@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable react/jsx-filename-extension */
-import './styles.scss';
+import './styles/styles.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
