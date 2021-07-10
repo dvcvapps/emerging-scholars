@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Home() {
-  return <h2>Home</h2>;
+  return (
+    <div className="bg-light-gray" style={{ height: 1000 }}>
+      This is the home page.
+    </div>
+  );
 }
 
 export default Home;

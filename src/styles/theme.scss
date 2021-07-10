@@ -1,0 +1,28 @@
+$primary: #102542;
+$secondary: #F87060;
+$success: rgb(150, 211, 150);
+$info: cyan;
+$warning: yellow;
+$danger: red;
+$light: white;
+$dark: black;
+$light-gray: #CDD7D6;
+$grullo: #B3A394;
+
+$theme-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark,
+    'light-gray': $light-gray,
+    'grullo': $grullo,
+);
+
+
+@function theme-color($key: "primary") {
+    @return map-get($theme-colors, $key);
+}

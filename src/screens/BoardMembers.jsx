@@ -1,7 +1,11 @@
 import React from 'react';
 
 function BoardMembers() {
-  return <h2>Board Members</h2>;
+  return (
+    <div className="bg-light-gray" style={{ height: 1000 }}>
+      This is the BoardMembers page.
+    </div>
+  );
 }
 
 export default BoardMembers;
