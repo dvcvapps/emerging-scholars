@@ -31,7 +31,7 @@ const defaultProps = {
 
 function Navbar({ children }) {
   return (
-    <div className="d-flex">
+    <div className="d-flex bg-dark p-1 sticky-top">
       {children}
     </div>
   );

@@ -1,14 +1,14 @@
 export const NAVBAR_SCHEMA = {
   home: {
-    text: 'Home',
+    text: 'Emerging Scholars',
     href: '/home',
   },
   items: [
     {
       dropdown: false,
       isActive: false,
-      text: 'About',
-      href: '/about',
+      text: 'Contact',
+      href: '/contact',
     },
     {
       dropdown: false,
