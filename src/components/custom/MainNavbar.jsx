@@ -40,7 +40,7 @@ function MainNavbar() {
   return (
     <Navbar>
       <Navbar.Main
-        bgColor={`${nav ? 'bg-dark' : 'bg-primary'}`}
+        bgColor={`${nav ? 'bg-primary' : 'bg-light-gray'}`}
       >
         <Navbar.Item
           text={NAVBAR_SCHEMA.home.text}

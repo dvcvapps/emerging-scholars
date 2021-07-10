@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home() {
   return (
-    <div className="bg-secondary" style={{ height: 1000 }}>
+    <div className="bg-light-white" style={{ height: 1000 }}>
       This is the home page.
     </div>
   );

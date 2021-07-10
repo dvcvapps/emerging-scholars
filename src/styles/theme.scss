@@ -1,11 +1,13 @@
-$primary: blue;
-$secondary: gray;
-$success: green;
+$primary: #102542;
+$secondary: #F87060;
+$success: rgb(150, 211, 150);
 $info: cyan;
 $warning: yellow;
 $danger: red;
 $light: white;
 $dark: black;
+$light-gray: #CDD7D6;
+$grullo: #B3A394;
 
 $theme-colors: (
     'primary': $primary,
@@ -16,6 +18,8 @@ $theme-colors: (
     'danger': $danger,
     'light': $light,
     'dark': $dark,
+    'light-gray': $light-gray,
+    'grullo': $grullo,
 );
 
 
