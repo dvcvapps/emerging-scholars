@@ -21,7 +21,7 @@ Item.defaultProps = {
 
 function Main({ children, bgColor }) {
   return (
-    <div className={`d-flex p-1 ${bgColor}`}>
+    <div className={`d-flex align-items-center p-1 ${bgColor}`}>
       {children}
     </div>
   );
@@ -37,9 +37,9 @@ Main.defaultProps = {
   bgColor: '',
 };
 
-function Mobile({ children }) {
+function Mobile({ children, bgColor }) {
   return (
-    <div className="bg-primary border-top">
+    <div className={`bg-primary border-top ${bgColor}`}>
       {children}
     </div>
   );
@@ -48,9 +48,11 @@ Mobile.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node]),
+  bgColor: PropTypes.string,
 };
 Mobile.defaultProps = {
   children: [],
+  bgColor: '',
 };
 
 function Navbar({ children }) {

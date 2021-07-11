@@ -40,12 +40,12 @@ function MainNavbar() {
   return (
     <Navbar>
       <Navbar.Main
-        bgColor={`${nav ? 'bg-primary' : 'bg-light-gray'}`}
+        bgColor={`${nav ? 'bg-primary' : 'bg-dark'}`}
       >
         <Navbar.Item
           text={NAVBAR_SCHEMA.home.text}
           href={NAVBAR_SCHEMA.home.href}
-          classNames="text-white p-1 nounderline me-auto"
+          classNames="h1 text-white p-1 nounderline me-auto"
         />
         { _.map(NAVBAR_SCHEMA.items, (item) => (
           !mobile && (
@@ -53,26 +53,28 @@ function MainNavbar() {
             key={item.text}
             text={item.text}
             href={item.href}
-            classNames="d-block text-white p-1 nounderline"
+            classNames="h5 d-block text-white p-1 nounderline"
           />
           )
         ))}
         <Navbar.Item
           text={NAVBAR_SCHEMA.donate.text}
           href={NAVBAR_SCHEMA.donate.href}
-          classNames="text-warning p-1 nounderline"
+          classNames="h5 text-warning p-1 nounderline"
         />
         { renderMenuIcon() }
       </Navbar.Main>
       { mobile && open
         && (
-        <Navbar.Mobile>{_.map(NAVBAR_SCHEMA.items, (item) => (
+        <Navbar.Mobile
+          bgColor={`${nav ? 'bg-primary' : 'bg-dark'}`}
+        >{_.map(NAVBAR_SCHEMA.items, (item) => (
           mobile && open && (
           <Navbar.Item
             key={item.text}
             text={item.text}
             href={item.href}
-            classNames="d-block p-1 nounderline text-white"
+            classNames="d-block h5 m-0 p-1 border-bottom nounderline text-white"
           />
           )
         ))}
