@@ -14,7 +14,7 @@ import useWindowSize from '../../hooks/useWindowSize';
 import useScrollPosition from '../../hooks/useScrollPosition';
 
 const WIDTH_BREAKPOINT = 576;
-const SCROLL_BREAKPOINT = 300;
+const SCROLL_BREAKPOINT = 10;
 
 function MainNavbar() {
   const [open, setOpen] = useState(false);
@@ -30,7 +30,7 @@ function MainNavbar() {
   }, [width, scroll]);
 
   const renderMenuIcon = () => (
-    <button type="button" className="d-sm-none btn btn-secondary" onClick={() => { setOpen(!open); }}>
+    <button type="button" className="d-sm-none btn btn-secondary m-2" onClick={() => { setOpen(!open); }}>
       {open
         ? <FontAwesomeIcon className="text-white" icon={faTimes} />
         : <FontAwesomeIcon className="text-white" icon={faBars} />}
@@ -40,7 +40,7 @@ function MainNavbar() {
   return (
     <Navbar>
       <Navbar.Main
-        bgColor={`${nav ? 'bg-primary' : 'bg-dark'}`}
+        bgColor={`${nav ? 'bg-primary' : 'bg-primary-fade'}`}
       >
         <Navbar.Item
           text={NAVBAR_SCHEMA.home.text}
@@ -67,7 +67,7 @@ function MainNavbar() {
       { mobile && open
         && (
         <Navbar.Mobile
-          bgColor={`${nav ? 'bg-primary' : 'bg-dark'}`}
+          bgColor={`${nav ? 'bg-primary' : 'bg-primary-fade'}`}
         >{_.map(NAVBAR_SCHEMA.items, (item) => (
           mobile && open && (
           <Navbar.Item

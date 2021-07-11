@@ -8,9 +8,11 @@ $light: white;
 $dark: black;
 $light-gray: #CDD7D6;
 $grullo: #B3A394;
+$primary-fade: #10254291;
 
 $theme-colors: (
     'primary': $primary,
+    'primary-fade': $primary-fade,
     'secondary': $secondary,
     'success': $success,
     'info': $info,
