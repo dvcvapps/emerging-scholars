@@ -1,22 +1,32 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable consistent-return */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function Item({ text, href, classNames }) {
+function Item({
+  text, href, classNames, icon, onClick,
+}) {
   const mainClasses = `${classNames}`;
   return (
-    <Link className={mainClasses} to={href}>{text}</Link>
+    <Link onClick={onClick} className={mainClasses} to={href}>
+      {text}
+    </Link>
   );
 }
 Item.propTypes = {
   classNames: PropTypes.string,
   text: PropTypes.string,
   href: PropTypes.string,
+  icon: () => {},
+  onClick: () => {},
 };
 Item.defaultProps = {
   classNames: '',
   text: '',
   href: '',
+  icon: () => {},
+  onClick: () => {},
 };
 
 function Main({ children, bgColor }) {
@@ -57,7 +67,7 @@ Mobile.defaultProps = {
 
 function Navbar({ children }) {
   return (
-    <div className="sticky-top">
+    <div className="fixed-top">
       {children}
     </div>
   );
