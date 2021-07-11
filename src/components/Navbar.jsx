@@ -57,7 +57,7 @@ Mobile.defaultProps = {
 
 function Navbar({ children }) {
   return (
-    <div className="sticky-top">
+    <div className="fixed-top">
       {children}
     </div>
   );

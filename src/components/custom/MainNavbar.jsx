@@ -14,7 +14,7 @@ import useWindowSize from '../../hooks/useWindowSize';
 import useScrollPosition from '../../hooks/useScrollPosition';
 
 const WIDTH_BREAKPOINT = 576;
-const SCROLL_BREAKPOINT = 10;
+const SCROLL_BREAKPOINT = 300;
 
 function MainNavbar() {
   const [open, setOpen] = useState(false);
@@ -40,7 +40,7 @@ function MainNavbar() {
   return (
     <Navbar>
       <Navbar.Main
-        bgColor={`${nav ? 'bg-primary' : 'bg-primary-fade'}`}
+        bgColor={`${!nav ? 'bg-primary' : 'bg-transparent'}`}
       >
         <Navbar.Item
           text={NAVBAR_SCHEMA.home.text}
@@ -67,7 +67,7 @@ function MainNavbar() {
       { mobile && open
         && (
         <Navbar.Mobile
-          bgColor={`${nav ? 'bg-primary' : 'bg-primary-fade'}`}
+          bgColor={`${!nav ? 'bg-primary' : 'bg-transparent'}`}
         >{_.map(NAVBAR_SCHEMA.items, (item) => (
           mobile && open && (
           <Navbar.Item
