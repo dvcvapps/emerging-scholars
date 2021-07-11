@@ -48,7 +48,7 @@ function Contact() {
               <label htmlFor="message">
                 Message:
               </label>
-              <textarea id="message" className="form-control" type="message" {...register('message', { required: true })} placeholder="Message" row d-flex justify-content-centers="3" />
+              <textarea id="message" className="form-control" type="message" {...register('message', { required: true })} placeholder="Message" />
             </div>
           </div>
           <div className="row d-flex justify-content-center">
