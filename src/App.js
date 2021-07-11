@@ -7,6 +7,7 @@ import MainNavbar from './components/custom/MainNavbar';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import BoardMembers from './pages/BoardMembers';
 import Donate from './pages/Donate';
@@ -16,6 +17,9 @@ function App() {
     <Router>
       <MainNavbar />
       <Switch>
+        <Route path="/about-us">
+          <AboutUs />
+        </Route>
         <Route path="/contact-us">
           <Contact />
         </Route>

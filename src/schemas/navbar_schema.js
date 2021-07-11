@@ -7,6 +7,12 @@ export const NAVBAR_SCHEMA = {
     {
       dropdown: false,
       isActive: false,
+      text: 'Our Story',
+      href: '/about-us',
+    },
+    {
+      dropdown: false,
+      isActive: false,
       text: 'Contact Us',
       href: '/contact-us',
     },
