@@ -1,6 +1,8 @@
 import React from 'react';
+import _ from 'lodash';
 import Spacer from '../components/Spacer';
 import Profile from '../components/Profile';
+import { MEMBERS_SCHEMA } from '../schemas/members_schema';
 
 function BoardMembers() {
   return (
@@ -9,41 +11,15 @@ function BoardMembers() {
       <div className="container" style={{ minHeight: 1000 }}>
         <h1 className="text-center">Board Members</h1>
         <div className="row">
-          <div className="col-6 col-lg-4">
-            <Profile
-              header="Fake Name"
-              image="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
-              desc="Description of person."
-            />
-          </div>
-          <div className="col-6 col-lg-4">
-            <Profile
-              header="Fake Name"
-              image="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
-              desc="Description of person."
-            />
-          </div>
-          <div className="col-6 col-lg-4">
-            <Profile
-              header="Fake Name"
-              image="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
-              desc="Description of person."
-            />
-          </div>
-          <div className="col-6 col-lg-4">
-            <Profile
-              header="Fake Name"
-              image="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
-              desc="Description of person."
-            />
-          </div>
-          <div className="col-6 col-lg-4">
-            <Profile
-              header="Fake Name"
-              image="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
-              desc="Description of person."
-            />
-          </div>
+          { _.map(MEMBERS_SCHEMA.members, (member) => (
+            <div className="col-6 col-lg-4">
+              <Profile
+                header={member.header}
+                image={member.image}
+                desc={member.desc}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </>
