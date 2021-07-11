@@ -7,8 +7,8 @@ export const NAVBAR_SCHEMA = {
     {
       dropdown: false,
       isActive: false,
-      text: 'Contact',
-      href: '/contact',
+      text: 'Contact Us',
+      href: '/contact-us',
     },
     {
       dropdown: false,

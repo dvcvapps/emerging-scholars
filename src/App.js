@@ -16,7 +16,7 @@ function App() {
     <Router>
       <MainNavbar />
       <Switch>
-        <Route path="/contact">
+        <Route path="/contact-us">
           <Contact />
         </Route>
         <Route path="/donate">
