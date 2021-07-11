@@ -12,7 +12,38 @@ function Home() {
         </div>
       </Hero>
       <div className="container" style={{ minHeight: 1000 }}>
-        <h1 className="text-center">Emerging Leaders and Scholars in STEM Academy</h1>
+        <h1 className="text-center">Mission</h1>
+        <p>
+          To increase and promote inclusivity of students in pursuing
+          (degrees/careers) in science, technology, engineering and mathematics (STEM).
+        </p>
+        <h1 className="text-center">Boost Underrepresentation in STEM</h1>
+        <ol>
+          <li>Identify Role Models That Students can Relate To</li>
+          <li>To Encourage students in STEM, Emphasize a Growth Mindset</li>
+          <li>Involve Students in Project-Based Learning</li>
+        </ol>
+        <p>Summer STEM Research Program (SRP)</p>
+
+        <h1 className="text-center">The Power of Basic Research</h1>
+        <h1 className="text-center">Why is Basic Research important?</h1>
+        <ul>
+          <li>Helps identify problems</li>
+          <li>Collect informational resources to address problem</li>
+          <li>Evaluate resources for quality and relevance</li>
+          <li>Define and create effective solutions to problems</li>
+          <li>Translational Skill</li>
+        </ul>
+        <h1 className="text-center">Why is Basic Research important?</h1>
+        <ul>
+          <li>2011: HIV Preventative Treatment: 93% reduction in HIV transmission</li>
+          <li>2014: Gravitational Waves: First evidence of the big bang</li>
+          <li>2015: First CRISPR editing of human embryos: Potential to Cure genetic diseases</li>
+          <li>2017: Oldest Homo sapiens fossils push species back 100,000 years!</li>
+          <li>2019: First Black Hole Image</li>
+        </ul>
+        <h1 className="text-center">Future Leaders and Scholars</h1>
+        <p>What will you discover?</p>
       </div>
     </>
   );

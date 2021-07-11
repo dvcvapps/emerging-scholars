@@ -1,6 +1,6 @@
 export const NAVBAR_SCHEMA = {
   home: {
-    text: 'Emerging Scholars',
+    text: 'ELSSA',
     href: '/home',
   },
   items: [
