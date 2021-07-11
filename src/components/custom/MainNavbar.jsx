@@ -40,7 +40,7 @@ function MainNavbar() {
   return (
     <Navbar>
       <Navbar.Main
-        bgColor={`${!nav ? 'bg-primary' : 'bg-transparent'}`}
+        bgColor={`${!nav ? 'bg-primary-trans' : 'bg-transparent'}`}
       >
         <Navbar.Item
           text={NAVBAR_SCHEMA.home.text}
@@ -67,7 +67,7 @@ function MainNavbar() {
       { mobile && open
         && (
         <Navbar.Mobile
-          bgColor={`${!nav ? 'bg-primary' : 'bg-transparent'}`}
+          bgColor={`${!nav ? 'bg-primary-trans' : 'bg-transparent'}`}
         >{_.map(NAVBAR_SCHEMA.items, (item) => (
           mobile && open && (
           <Navbar.Item

@@ -1,4 +1,5 @@
 $primary: #102542;
+$primary-trans: #10254281;
 $secondary: #F87060;
 $success: rgb(150, 211, 150);
 $info: cyan;
@@ -12,6 +13,7 @@ $transparent: #10254200;
 
 $theme-colors: (
     'primary': $primary,
+    'primary-trans': $primary-trans,
     'transparent': $transparent,
     'secondary': $secondary,
     'success': $success,
