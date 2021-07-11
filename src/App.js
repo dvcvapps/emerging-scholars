@@ -1,7 +1,10 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/jsx-filename-extension */
-import React from 'react';
+import React, { useEffect } from 'react';
 
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  HashRouter as Router, Switch, Route, useLocation,
+} from 'react-router-dom';
 
 import MainNavbar from './components/custom/MainNavbar';
 import Footer from './components/Footer';
@@ -12,9 +15,20 @@ import Contact from './pages/Contact';
 import BoardMembers from './pages/BoardMembers';
 import Donate from './pages/Donate';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <MainNavbar />
       <Switch>
         <Route path="/about-us">
