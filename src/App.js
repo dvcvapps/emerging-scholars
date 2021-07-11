@@ -6,10 +6,10 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import MainNavbar from './components/custom/MainNavbar';
 import Footer from './components/Footer';
 
-import Home from './screens/Home';
-import Contact from './screens/Contact';
-import BoardMembers from './screens/BoardMembers';
-import Donate from './screens/Donate';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import BoardMembers from './pages/BoardMembers';
+import Donate from './pages/Donate';
 
 function App() {
   return (
