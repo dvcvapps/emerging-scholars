@@ -6,7 +6,7 @@ function Donate() {
     <>
       <Spacer />
       <div className="container" style={{ minHeight: 1000 }}>
-        <h1>Donate</h1>
+        <h1 className="text-center">Donate</h1>
       </div>
     </>
   );

@@ -12,7 +12,7 @@ function Home() {
         </div>
       </Hero>
       <div className="container" style={{ minHeight: 1000 }}>
-        <h1>Emerging Leaders and Scholars in STEM Academy</h1>
+        <h1 className="text-center">Emerging Leaders and Scholars in STEM Academy</h1>
       </div>
     </>
   );

@@ -7,7 +7,7 @@ function Contact() {
     <>
       <Spacer />
       <div className="container" style={{ minHeight: 1000 }}>
-        <h1>Contact</h1>
+        <h1 className="text-center">Contact</h1>
       </div>
     </>
   );

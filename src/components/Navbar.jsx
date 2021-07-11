@@ -1,19 +1,15 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable consistent-return */
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-function renderIcon(icon) {
-
-}
 
 function Item({
-  text, href, classNames, icon,
+  text, href, classNames, icon, onClick,
 }) {
   const mainClasses = `${classNames}`;
   return (
-    <Link className={mainClasses} to={href}>
+    <Link onClick={onClick} className={mainClasses} to={href}>
       {text}
     </Link>
   );
@@ -23,12 +19,14 @@ Item.propTypes = {
   text: PropTypes.string,
   href: PropTypes.string,
   icon: () => {},
+  onClick: () => {},
 };
 Item.defaultProps = {
   classNames: '',
   text: '',
   href: '',
-  icon: PropTypes.func,
+  icon: () => {},
+  onClick: () => {},
 };
 
 function Main({ children, bgColor }) {
