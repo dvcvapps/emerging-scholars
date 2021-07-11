@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React, { useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0, 0]);

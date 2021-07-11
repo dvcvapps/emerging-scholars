@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React, { useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 
 function useScrollPosition() {
   const [size, setSize] = useState([0]);
