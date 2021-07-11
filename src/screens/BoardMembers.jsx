@@ -1,10 +1,14 @@
 import React from 'react';
+import Spacer from '../components/Spacer';
 
 function BoardMembers() {
   return (
-    <div className="container" style={{ height: 1000 }}>
-      This is the BoardMembers page.
-    </div>
+    <>
+      <Spacer />
+      <div className="container" style={{ minHeight: 1000 }}>
+        <h1>Board Members</h1>
+      </div>
+    </>
   );
 }
 

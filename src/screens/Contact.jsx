@@ -1,11 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import Spacer from '../components/Spacer';
 
 function Contact() {
   return (
-    <div className="container" style={{ height: 1000 }}>
-      This is the Contact page.
-    </div>
+    <>
+      <Spacer />
+      <div className="container" style={{ minHeight: 1000 }}>
+        <h1>Contact</h1>
+      </div>
+    </>
   );
 }
 

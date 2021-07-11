@@ -1,10 +1,14 @@
 import React from 'react';
+import Spacer from '../components/Spacer';
 
 function Donate() {
   return (
-    <div className="container" style={{ height: 1000 }}>
-      This is the donate page.
-    </div>
+    <>
+      <Spacer />
+      <div className="container" style={{ minHeight: 1000 }}>
+        <h1>Donate</h1>
+      </div>
+    </>
   );
 }
 

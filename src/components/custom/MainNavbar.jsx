@@ -14,7 +14,7 @@ import useWindowSize from '../../hooks/useWindowSize';
 import useScrollPosition from '../../hooks/useScrollPosition';
 
 const WIDTH_BREAKPOINT = 576;
-const SCROLL_BREAKPOINT = 300;
+const SCROLL_BREAKPOINT = 100;
 
 function MainNavbar() {
   const [open, setOpen] = useState(false);
@@ -26,7 +26,6 @@ function MainNavbar() {
   useEffect(() => {
     setNav(scroll < SCROLL_BREAKPOINT);
     setMobile(width < WIDTH_BREAKPOINT);
-    console.log(scroll);
   }, [width, scroll]);
 
   const renderMenuIcon = () => (
@@ -46,6 +45,7 @@ function MainNavbar() {
           text={NAVBAR_SCHEMA.home.text}
           href={NAVBAR_SCHEMA.home.href}
           classNames="h1 text-white p-1 nounderline me-auto"
+          icon={faBars}
         />
         { _.map(NAVBAR_SCHEMA.items, (item) => (
           !mobile && (

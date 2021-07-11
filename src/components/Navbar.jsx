@@ -1,22 +1,34 @@
+/* eslint-disable consistent-return */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function Item({ text, href, classNames }) {
+function renderIcon(icon) {
+
+}
+
+function Item({
+  text, href, classNames, icon,
+}) {
   const mainClasses = `${classNames}`;
   return (
-    <Link className={mainClasses} to={href}>{text}</Link>
+    <Link className={mainClasses} to={href}>
+      {text}
+    </Link>
   );
 }
 Item.propTypes = {
   classNames: PropTypes.string,
   text: PropTypes.string,
   href: PropTypes.string,
+  icon: () => {},
 };
 Item.defaultProps = {
   classNames: '',
   text: '',
   href: '',
+  icon: PropTypes.func,
 };
 
 function Main({ children, bgColor }) {
