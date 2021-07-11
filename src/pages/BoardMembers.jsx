@@ -12,7 +12,7 @@ function BoardMembers() {
         <h1 className="text-center">Board Members</h1>
         <div className="row">
           { _.map(MEMBERS_SCHEMA.members, (member) => (
-            <div className="col-6 col-lg-4">
+            <div key={member.header} className="col-12 col-sm-6 col-md-4 col-lg-3">
               <Profile
                 header={member.header}
                 image={member.image}
