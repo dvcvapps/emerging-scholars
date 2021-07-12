@@ -52,7 +52,7 @@ export const MEMBERS_SCHEMA = {
     {
       header: 'Web Developer',
       name: 'David Chavez',
-      image: './assets/blank-profile.jpeg',
+      image: './assets/david.jpg',
       schools: ['College Of Desert', 'UC Berkeley (Statistics)'],
       desc: '',
     },
