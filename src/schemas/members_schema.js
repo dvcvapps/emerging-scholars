@@ -1,45 +1,43 @@
-import logo from '../assets/blank-profile.jpeg';
-
 export const MEMBERS_SCHEMA = {
   members: [
     {
       header: 'President-Gustavo Garcia',
-      image: logo,
+      image: '/assets/blank-profile.jpeg',
       desc: 'Los Angeles Harbor Community College UC Berkeley',
     },
     {
       header: 'Vice President-Natalie Penado',
-      image: logo,
+      image: '/assets/blank-profile.jpeg',
       desc: 'UC Berkeley (Environmental Earth Science',
     },
     {
       header: 'Executive Director-Jessica Flores',
-      image: logo,
+      image: '/assets/blank-profile.jpeg',
       desc: 'El Camino Community College UC Los Angeles (Human Biology: Sub Focus MIMG) USC (MS in Global Medicine)',
     },
     {
       header: 'Treasurer-Stephania Ramirez',
-      image: logo,
+      image: '/assets/blank-profile.jpeg',
       desc: 'Santa Ana Community College UC Berkeley (Molecular Toxicology)',
     },
     {
       header: 'Secretary-Angelica Marquez',
-      image: logo,
+      image: '/assets/blank-profile.jpeg',
       desc: 'El Camino Community College UC Irvine (Biological Sciences)',
     },
     {
       header: 'General Board Member-Giancarlo Escobar',
-      image: logo,
+      image: '/assets/blank-profile.jpeg',
       desc: 'Los Angeles Harbor Community College UC Berkeley (Statistics)',
     },
     {
       header: 'Senior Student Ambassador-Sebastian Carrillo Cario',
-      image: logo,
+      image: '/assets/blank-profile.jpeg',
       desc: 'UC Los Angeles (Psychobiology, Major; Spanish, Minor)',
     },
     {
       header: 'Web Developer-David Chavez',
-      image: logo,
+      image: '/assets/blank-profile.jpeg',
       desc: 'College Of Desert UC Berkeley (Statistics)',
     },
   ],

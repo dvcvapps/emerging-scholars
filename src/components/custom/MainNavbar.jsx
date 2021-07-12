@@ -62,7 +62,7 @@ function MainNavbar() {
         <Navbar.Item
           text={NAVBAR_SCHEMA.home.text}
           href={NAVBAR_SCHEMA.home.href}
-          classNames="h1 text-white p-1 nounderline me-auto"
+          classNames="h1 d-block text-white papyrus-font m-1 nounderline me-auto"
           icon={faBars}
           onClick={closeMenu}
         />
