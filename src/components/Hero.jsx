@@ -16,7 +16,7 @@ Hero.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node]),
   image: PropTypes.string,
-  height: PropTypes.number,
+  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 Hero.defaultProps = {
   children: [],
