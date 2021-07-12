@@ -7,7 +7,7 @@ import Hero from '../components/Hero';
 function Home() {
   return (
     <>
-      <Hero height="100vh" image="/assets/background-image.jpeg">
+      <Hero height="100vh" image="./assets/background-image.jpeg">
         <div>
           <h4 className="text-white d-block text-center">Emerging Leaders</h4>
           <h4 className="text-white d-block text-center">and</h4>
