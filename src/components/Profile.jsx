@@ -9,7 +9,7 @@ function Profile({
 }) {
   return (
     <div className="d-flex justify-content-around flex-column">
-      <h4 className="text-center my-0 papyrus-font">{header}</h4>
+      <h4 className="text-center my-0 open-sans-font">{header}</h4>
       <h4 className="text-center pb-3">{name}</h4>
       <img
         className="align-self-center rounded-circle z-depth-2"
