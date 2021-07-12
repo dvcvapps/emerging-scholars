@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <Hero height="100vh" image="./assets/background-image.jpeg">
-        <div>
+        <div className="border-top border-bottom p-3 rounded">
           <h4 className="text-white d-block text-center">Emerging Leaders</h4>
           <h4 className="text-white d-block text-center">and</h4>
           <h4 className="text-white d-block text-center">Scholars in STEM Academy</h4>
@@ -18,7 +18,7 @@ function Home() {
         <div className="row ">
           <div className="col-md-6 d-flex justify-content-center align-items-center flex-column bg-primary">
             <Fade>
-              <h2 className="text-center open-sans-font text-white mt-3">Mission</h2>
+              <h2 className="text-center open-sans-font text-secondary text-white mt-3">Mission</h2>
               <p className="text-center text-white mb-3">
                 To increase and promote inclusivity of students in pursuing
                 (degrees/careers) in science, technology, engineering and mathematics (STEM).
@@ -49,8 +49,8 @@ function Home() {
         <div className="row">
           <Fade>
             <div className="col-md-6 d-flex justify-content-center align-items-center flex-column">
-              <h2 className="text-center open-sans-font">Goals</h2>
-              <ul>
+              <h2 className="text-center open-sans-font text-secondary">Goals</h2>
+              <ul className="text-primary">
                 <li>
                   Provide students exposure to basics of
                   research and examples of current cutting edge biomedical research
@@ -72,8 +72,8 @@ function Home() {
           </Fade>
           <Fade>
             <div className="col-md-6 d-flex  align-items-center flex-column">
-              <h2 className="text-center open-sans-font">Boost Underrepresentation in STEM</h2>
-              <ol>
+              <h2 className="text-center open-sans-font text-secondary">Boost Underrepresentation in STEM</h2>
+              <ol className="text-primary">
                 <li>Identify Role Models That Students can Relate To</li>
                 <li>To Encourage students in STEM, Emphasize a Growth Mindset</li>
                 <li>Involve Students in Project-Based Learning</li>
@@ -83,8 +83,8 @@ function Home() {
         </div>
         <Fade>
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <h2 className="text-center open-sans-font">Why is Basic Research important?</h2>
-            <ul>
+            <h2 className="text-center open-sans-font text-secondary">Why is Basic Research important?</h2>
+            <ul className="text-primary">
               <li>Helps identify problems</li>
               <li>Collect informational resources to address problem</li>
               <li>Evaluate resources for quality and relevance</li>
@@ -95,8 +95,8 @@ function Home() {
         </Fade>
         <Fade>
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <h2 className="text-center open-sans-font">Future Leaders and Scholars</h2>
-            <p>What will you discover?</p>
+            <h2 className="text-center open-sans-font text-secondary">Future Leaders and Scholars</h2>
+            <p className="text-primary">What will you discover?</p>
           </div>
         </Fade>
       </div>

@@ -16,7 +16,7 @@ function Contact() {
     <>
       <Spacer />
       <div className="container" style={{ minHeight: 1000 }}>
-        <h1 className="text-center">Contact Us</h1>
+        <h1 className="text-center text-primary">Contact Us</h1>
         <form className="" onSubmit={handleSubmit(onSubmit)}>
           <div className="row d-flex justify-content-center">
             <div className="form-group col-lg-8">
