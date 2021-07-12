@@ -15,7 +15,9 @@ function BoardMembers() {
             <div key={member.header} className="col-12 col-sm-6 col-md-4 col-lg-3">
               <Profile
                 header={member.header}
+                name={member.name}
                 image={member.image}
+                schools={member.schools}
                 desc={member.desc}
               />
             </div>
