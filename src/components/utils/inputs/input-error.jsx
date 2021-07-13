@@ -12,11 +12,7 @@ function ErrorMessage({ error }) {
 }
 
 ErrorMessage.propTypes = {
-  error: PropTypes.object,
-};
-
-ErrorMessage.defaultProps = {
-  error: null,
+  error: PropTypes.object.isRequired,
 };
 
 export default ErrorMessage;
