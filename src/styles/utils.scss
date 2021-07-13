@@ -11,30 +11,29 @@
 }
 
 .footer{
-  background: #152F4F;
-  color:white;
+  color: $light;
   
   .links{
     ul {list-style-type: none;}
     li a{
-      color: white;
+      color: $light;
       transition: color .2s;
       &:hover{
         text-decoration:none;
-        color:#4180CB;
+        color: $primary;
         }
     }
   }  
   .about-company{
     i{font-size: 25px;}
     a{
-      color:white;
+      color:$light;
       transition: color .2s;
-      &:hover{color:#4180CB}
+      &:hover{color: $info}
     }
   } 
   .location{
     i{font-size: 18px;}
   }
-  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+  .copyright p{border-top:1px solid $primary-trans;} 
 }
