@@ -29,3 +29,8 @@ $theme-colors: (
 @function theme-color($key: "primary") {
     @return map-get($theme-colors, $key);
 }
+
+html *
+{
+   font-family: "Arial", serif;
+}
