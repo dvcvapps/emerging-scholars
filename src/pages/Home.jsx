@@ -19,9 +19,9 @@ function Home() {
           <div className="col-md-6 d-flex justify-content-center align-items-center flex-column bg-primary">
             <Fade>
               <h2 className="text-center open-sans-font text-secondary text-white mt-3">Mission</h2>
-              <p className="text-center text-white mb-3">
+              <p className="text-center text-white mb-3 w-75">
                 To increase and promote inclusivity of students in pursuing
-                (degrees/careers) in science, technology, engineering and mathematics (STEM).
+                (degrees/careers) science, technology, engineering and mathematics (STEM).
               </p>
             </Fade>
           </div>
