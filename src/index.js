@@ -3,7 +3,7 @@
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable react/jsx-filename-extension */
 import './styles/styles.scss';
-
+import './styles/fontAwesome';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';

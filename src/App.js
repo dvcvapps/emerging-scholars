@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 import MainNavbar from './components/custom/MainNavbar';
-import Footer from './components/Footer';
+import MainFooter from './components/custom/MainFooter';
 
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
@@ -47,7 +47,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
-      <Footer />
+      <MainFooter />
     </Router>
   );
 }
