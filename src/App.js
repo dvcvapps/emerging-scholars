@@ -14,8 +14,6 @@ import Contact from './pages/Contact';
 import BoardMembers from './pages/BoardMembers';
 import Donate from './pages/Donate';
 
-require('dotenv').config();
-
 function ScrollToTop() {
   const { pathname } = useLocation();
 
