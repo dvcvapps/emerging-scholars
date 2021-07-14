@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useForm as formSpreeUseForm } from '@formspree/react';
 import Spacer from '../components/Spacer';
@@ -11,15 +11,21 @@ function Contact() {
     handleSubmit: formSubmitHandler,
     formState: { errors },
   } = useForm();
-  const [state, handleSubmit] = formSpreeUseForm('process.env.FORM_SPREE');
-  console.log(process.env.FORM_SPREE);
-  const onSubmit = (data) => handleSubmit(data);
+  const [successDev, setSuccessDev] = useState(false);
+  const [state, handleSubmit] = formSpreeUseForm(process.env.REACT_APP_FORM_SPREE || '123');
+  const onSubmit = (data) => {
+    if (process.env.NODE_ENV === 'development') {
+      setSuccessDev(true);
+      return;
+    }
+    handleSubmit(data);
+  };
   return (
     <>
       <Spacer />
       <div className="container" style={{ minHeight: 1000 }}>
         <h1 className="text-center text-primary">Contact Us</h1>
-        { state.succeeded ? <p className="text-center"> Thank you!</p> : (
+        { (state.succeeded || successDev) ? <p className="text-center"> Thank you!</p> : (
           <form className="" onSubmit={formSubmitHandler(onSubmit)}>
             <TextInput
               label="First Name"
