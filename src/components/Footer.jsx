@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 /* eslint-disable no-undef */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/control-has-associated-label */
@@ -8,16 +9,14 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const propTypes = {
-  schema: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node]),
+  links: PropTypes.array,
   title: PropTypes.string,
   desc: PropTypes.string,
   location: PropTypes.string,
   phone: PropTypes.string,
 };
 const defaultProps = {
-  schema: {},
+  links: {},
   title: '',
   desc: '',
   location: '',
@@ -25,7 +24,7 @@ const defaultProps = {
 };
 
 function Footer({
-  title, schema, desc, location, phone,
+  title, links, desc, location, phone,
 }) {
   const [year, setYear] = useState('');
   useEffect(() => {
@@ -46,12 +45,12 @@ function Footer({
           <div className="col-lg-3 col-xs-12 links">
             <h4 className="mt-lg-0 mt-sm-3">Links</h4>
             <ul className="m-0 p-0">
-              {_.map(schema.items, (item) => (
-                <li>
+              {_.map(links, (link) => (
+                <li key={link.text}>
                   <FontAwesomeIcon
-                    icon={['fa', item.icon]}
+                    icon={['fa', link.icon]}
                   />
-                  <Link className="ml-2 nounderline" to={item.href}>{(` ${item.text}`)}</Link>
+                  <Link className="ml-2 nounderline" to={link.href}>{(` ${link.text}`)}</Link>
                 </li>
               ))}
             </ul>

@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useEffect } from 'react';
-
 import {
   HashRouter as Router, Switch, Route, useLocation,
 } from 'react-router-dom';
@@ -14,6 +13,8 @@ import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import BoardMembers from './pages/BoardMembers';
 import Donate from './pages/Donate';
+
+require('dotenv').config();
 
 function ScrollToTop() {
   const { pathname } = useLocation();

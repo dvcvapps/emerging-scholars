@@ -11,7 +11,8 @@ function Contact() {
     handleSubmit: formSubmitHandler,
     formState: { errors },
   } = useForm();
-  const [state, handleSubmit] = formSpreeUseForm('xayadeed');
+  const [state, handleSubmit] = formSpreeUseForm('process.env.FORM_SPREE');
+  console.log(process.env.FORM_SPREE);
   const onSubmit = (data) => handleSubmit(data);
   return (
     <>

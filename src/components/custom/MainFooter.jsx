@@ -12,7 +12,7 @@ function MainFooter() {
     <Footer
       title={NAVBAR_SCHEMA.home.text}
       desc="Emerging Leaders and Scholars in STEM Academy"
-      schema={NAVBAR_SCHEMA}
+      links={NAVBAR_SCHEMA.items}
       location="Southern California"
     />
   );
