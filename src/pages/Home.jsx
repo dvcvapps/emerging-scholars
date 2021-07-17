@@ -16,7 +16,7 @@ function Home() {
           </div>
         </Hero>
         <div className="row p-0 m-0">
-          <div className="col-md-6 d-flex justify-content-center align-items-center flex-column bg-primary">
+          <div className="col-sm-6 d-flex justify-content-center align-items-center flex-column bg-primary">
             <Fade>
               <h2 className="text-center open-sans-font text-secondary text-white mt-3">Mission</h2>
               <p className="text-center text-white mb-3 w-75">
@@ -25,19 +25,19 @@ function Home() {
               </p>
             </Fade>
           </div>
-          <div className="col-md-6 bg-secondary">
+          <div className="col-sm-6 bg-secondary">
             <div className="row">
               <Zoom>
-                <div className="col col-md-6 p-0">
+                <div className="col col-sm-6 p-0">
                   <img width="100%" src="./assets/neuron.png" alt="" />
                 </div>
-                <div className="col col-md-6 p-0">
+                <div className="col col-sm-6 p-0">
                   <img width="100%" src="./assets/tech.png" alt="" />
                 </div>
-                <div className="col col-md-6 p-0">
+                <div className="col col-sm-6 p-0">
                   <img width="100%" src="./assets/engineering.png" alt="" />
                 </div>
-                <div className="col col-md-6 p-0">
+                <div className="col col-sm-6 p-0">
                   <img width="100%" src="./assets/math.png" alt="" />
                 </div>
               </Zoom>
