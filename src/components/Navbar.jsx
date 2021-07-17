@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 function Item({
-  text, href, classNames, icon, onClick,
+  text, href, classNames, onClick,
 }) {
   const mainClasses = `${classNames}`;
   return (
@@ -18,14 +18,12 @@ Item.propTypes = {
   classNames: PropTypes.string,
   text: PropTypes.string,
   href: PropTypes.string,
-  icon: () => {},
   onClick: () => {},
 };
 Item.defaultProps = {
   classNames: '',
   text: '',
   href: '',
-  icon: () => {},
   onClick: () => {},
 };
 

@@ -5,7 +5,6 @@ import React, { useState, useEffect } from 'react';
 import _ from 'lodash';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import Navbar from '../Navbar';
 
@@ -44,8 +43,8 @@ function MainNavbar() {
     return (
       <button type="button" className="d-sm-none btn btn-secondary m-2" onClick={setNavColor}>
         {open
-          ? <FontAwesomeIcon className="text-white" icon={faTimes} />
-          : <FontAwesomeIcon className="text-white" icon={faBars} />}
+          ? <FontAwesomeIcon className="text-white" icon={['fa', 'times']} />
+          : <FontAwesomeIcon className="text-white" icon={['fa', 'bars']} />}
       </button>
     );
   };
@@ -63,7 +62,6 @@ function MainNavbar() {
           text={NAVBAR_SCHEMA.home.text}
           href={NAVBAR_SCHEMA.home.href}
           classNames="h1 d-block text-secondary open-sans-font m-1 nounderline me-auto"
-          icon={faBars}
           onClick={closeMenu}
         />
         { _.map(NAVBAR_SCHEMA.items, (item) => (
