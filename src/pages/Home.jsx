@@ -14,7 +14,7 @@ function Home() {
           <h4 className="text-white d-block text-center">Scholars in STEM Academy</h4>
         </div>
       </Hero>
-      <div className="container-fluid">
+      <div className="container-xl" style={{ minHeight: 600 }}>
         <div className="row ">
           <div className="col-md-6 d-flex justify-content-center align-items-center flex-column bg-primary">
             <Fade>
@@ -44,8 +44,6 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="container" style={{ minHeight: 600 }}>
         <div className="row">
           <Fade>
             <div className="col-md-6 d-flex justify-content-center align-items-center flex-column">
