@@ -31,7 +31,7 @@ function Footer({
     setYear(new Date().getFullYear());
   }, []);
   return (
-    <div className="mt-1 pt-5 pb-5 bg-grullo footer">
+    <div className="mt-1 pt-5 pb-5 bg-grullo footer text-light no-list-style">
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-xs-12 about-company">
@@ -50,7 +50,7 @@ function Footer({
                   <FontAwesomeIcon
                     icon={['fa', link.icon]}
                   />
-                  <Link className="ml-2 nounderline" to={link.href}>{(` ${link.text}`)}</Link>
+                  <Link className="ml-2 text-white nounderline" to={link.href}>{(` ${link.text}`)}</Link>
                 </li>
               ))}
             </ul>
@@ -69,8 +69,9 @@ function Footer({
           </div>
         </div>
         <div className="row mt-5">
-          <div className="col copyright">
-            <p className="">
+          <hr className="text-dark" />
+          <div className="col">
+            <p>
               <small className="text-white-50">
                 ©
                 {(year)}
