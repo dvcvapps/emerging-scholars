@@ -5,7 +5,7 @@ function Hero({ children, image, height }) {
   const styles = { backgroundImage: `url(${image})`, height: height };
 
   return (
-    <div className="container-fluid d-flex justify-content-center align-items-center" style={styles}>
+    <div className="d-flex justify-content-center align-items-center" style={styles}>
       {children}
     </div>
   );

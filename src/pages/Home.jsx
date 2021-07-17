@@ -7,15 +7,15 @@ import Hero from '../components/Hero';
 function Home() {
   return (
     <>
-      <Hero height="100vh" image="./assets/background-image.jpeg">
-        <div className="border-top border-bottom p-3 rounded">
-          <h4 className="text-white d-block text-center">Emerging Leaders</h4>
-          <h4 className="text-white d-block text-center">and</h4>
-          <h4 className="text-white d-block text-center">Scholars in STEM Academy</h4>
-        </div>
-      </Hero>
-      <div className="container-xl" style={{ minHeight: 600 }}>
-        <div className="row ">
+      <div className="container-xl p-0" style={{ minHeight: 600 }}>
+        <Hero height="100vh" image="./assets/background-image.jpeg">
+          <div className="border-top border-bottom p-3 rounded">
+            <h4 className="text-white d-block text-center">Emerging Leaders</h4>
+            <h4 className="text-white d-block text-center">and</h4>
+            <h4 className="text-white d-block text-center">Scholars in STEM Academy</h4>
+          </div>
+        </Hero>
+        <div className="row p-0 m-0">
           <div className="col-md-6 d-flex justify-content-center align-items-center flex-column bg-primary">
             <Fade>
               <h2 className="text-center open-sans-font text-secondary text-white mt-3">Mission</h2>
@@ -44,7 +44,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row p-2">
           <Fade>
             <div className="col-md-6 d-flex justify-content-center align-items-center flex-column">
               <h2 className="text-center open-sans-font text-secondary">Goals</h2>
