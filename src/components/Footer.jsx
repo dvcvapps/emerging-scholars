@@ -37,10 +37,6 @@ function Footer({
           <div className="col-lg-5 col-xs-12">
             <h2>{title}</h2>
             <p className="pr-5 text-white-50">{desc}</p>
-            <p>
-              <a href="/dkslfj"><i className="fa fa-facebook-square mr-1" /></a>
-              <a href="/skfdljsf"><i className="fa fa-linkedin-square" /></a>
-            </p>
           </div>
           <div className="col-lg-3 col-xs-12 links">
             <h4 className="mt-lg-0 mt-sm-3">Links</h4>
@@ -55,7 +51,7 @@ function Footer({
               ))}
             </ul>
           </div>
-          <div className="col-lg-4 col-xs-12 location">
+          <div className="col-lg-4 col-xs-12">
             <h4 className="mt-lg-0 mt-sm-4">Location</h4>
             <p>{location}</p>
             {phone && (
