@@ -1,3 +1,5 @@
+/* eslint-disable no-alert */
+/* eslint-disable no-undef */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -21,7 +23,7 @@ function Home() {
               EMERGING LEADERS AND SCHOLARS IN STEM ACADEMY
             </p>
             <div className="social-links">
-              <Link to="#" className="text-twitter"><FontAwesomeIcon icon={['fab', 'twitter']} /></Link>
+              <Link to="#" className="text-twitter" onClick={() => alert('This will redirect to Twitter')}><FontAwesomeIcon icon={['fab', 'twitter']} /></Link>
             </div>
           </div>
         </Hero>
