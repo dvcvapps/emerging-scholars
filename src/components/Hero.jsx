@@ -2,7 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Hero({ children, image, height }) {
-  const styles = { backgroundImage: `url(${image})`, height: height };
+  const styles = {
+    backgroundImage: `url(${image})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    height: height,
+  };
 
   return (
     <div className="d-flex justify-content-center align-items-center" style={styles}>

@@ -7,9 +7,9 @@ import Hero from '../components/Hero';
 function Home() {
   return (
     <>
-      <div className="container-xl p-0" style={{ minHeight: 600 }}>
+      <div className="container-xxl p-0" style={{ minHeight: 600 }}>
         <Hero height="100vh" image="./assets/background-image.jpeg">
-          <div className="border-top border-bottom p-3 rounded">
+          <div className="border-top border-bottom p-3">
             <h4 className="text-white d-block text-center">Emerging Leaders</h4>
             <h4 className="text-white d-block text-center">and</h4>
             <h4 className="text-white d-block text-center">Scholars in STEM Academy</h4>
