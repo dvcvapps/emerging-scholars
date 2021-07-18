@@ -56,16 +56,16 @@ function Home() {
             </div>
           </div>
         </div>
-        <Fade>
-          <div className="">
+        <div className="">
+          <Fade>
             <h2 className="text-center open-sans-font text-secondary">Goals</h2>
-            <div className="row text-primary">
+            <div className="row text-primary m-0 p-0">
               <div className="col-lg-3 mb-1">
                 <Card
                   classNames="h-100"
                   header="#1"
                   desc="Provide students exposure to basics of
-                research and examples of current cutting edge biomedical research"
+              research and examples of current cutting edge biomedical research"
                 />
               </div>
               <div className="col-lg-3 mb-1">
@@ -73,7 +73,7 @@ function Home() {
                   classNames="h-100"
                   header="#2"
                   desc="Acquire skills in developing a research question to
-                give a virtual science presentation in a STEM topic"
+              give a virtual science presentation in a STEM topic"
                 />
               </div>
               <div className="col-lg-3 mb-1">
@@ -81,7 +81,7 @@ function Home() {
                   classNames="h-100"
                   header="#3"
                   desc="Workshops (navigate academia, personal statement,
-                financial aid) and panels (STEM transfers, science/healthcare careers)"
+              financial aid) and panels (STEM transfers, science/healthcare careers)"
                 />
               </div>
               <div className="col-lg-3 mb-1">
@@ -89,12 +89,12 @@ function Home() {
                   classNames="h-100"
                   header="#4"
                   desc="Feedback on personal statement and strong reference for
-                future opportunities"
+              future opportunities"
                 />
               </div>
             </div>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
         <div className="d-flex justify-content-center align-items-center flex-column">
           <div className="col-md-6">
             <Fade>
