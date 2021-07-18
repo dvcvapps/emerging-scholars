@@ -1,4 +1,9 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 
@@ -10,10 +15,14 @@ function Home() {
     <>
       <div className="container-xxl p-0">
         <Hero height="100vh" image="./assets/background-image.jpeg">
-          <div className="border-top border-bottom p-3">
-            <h4 className="text-white d-block text-center">Emerging Leaders</h4>
-            <h4 className="text-white d-block text-center">and</h4>
-            <h4 className="text-white d-block text-center">Scholars in STEM Academy</h4>
+          <div className="container ">
+            <h1 className="text-white">ELSSA</h1>
+            <p className="text-white">
+              EMERGING LEADERS AND SCHOLARS IN STEM ACADEMY
+            </p>
+            <div className="social-links">
+              <Link to="#" className="text-twitter"><FontAwesomeIcon icon={['fab', 'twitter']} /></Link>
+            </div>
           </div>
         </Hero>
         <div className="row p-0 m-0">

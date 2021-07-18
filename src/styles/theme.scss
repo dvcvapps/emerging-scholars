@@ -3,6 +3,7 @@ $primary-trans: #10254281;
 $secondary: #F87060;
 $success: rgb(150, 211, 150);
 $info: cyan;
+$twitter: #1DA1F2;
 $warning: yellow;
 $danger: red;
 $light: white;
@@ -24,6 +25,7 @@ $theme-colors: (
     'dark': $dark,
     'light-gray': $light-gray,
     'grullo': $grullo,
+    'twitter' :$twitter,
 );
 
 @function theme-color($key: "primary") {

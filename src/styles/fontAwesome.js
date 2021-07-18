@@ -3,6 +3,7 @@ import {
   faBars, faTimes, faPhone, faEnvelope, faUsers, faBook,
 
 } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 library.add(
   faBars,
@@ -11,4 +12,5 @@ library.add(
   faEnvelope,
   faUsers,
   faBook,
+  faTwitter,
 );
