@@ -24,7 +24,7 @@ function Contact() {
     <>
       <Spacer />
       <div className="container" style={{ minHeight: 1000 }}>
-        <h1 className="text-center text-primary">Contact Us</h1>
+        <h1 className="display-4 text-center text-primary">Contact Us</h1>
         { (state.succeeded || successDev) ? <p className="text-center"> Thank you!</p> : (
           <form className="" onSubmit={formSubmitHandler(onSubmit)}>
             <TextInput
