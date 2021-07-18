@@ -45,7 +45,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <Zoom>
+        <Fade>
           <div className="p-3">
             <h2 className="text-center open-sans-font text-secondary">Goals</h2>
             <div className="row text-primary">
@@ -83,7 +83,7 @@ function Home() {
               </div>
             </div>
           </div>
-        </Zoom>
+        </Fade>
         <div className="d-flex justify-content-center align-items-center flex-column">
           <div className="col-md-6">
             <Fade>
