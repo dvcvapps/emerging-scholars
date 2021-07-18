@@ -44,7 +44,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="row p-2">
+        <div className="row p-0 m-0">
           <Fade>
             <div className="col-md-6 d-flex justify-content-center align-items-center flex-column">
               <h2 className="text-center open-sans-font text-secondary">Goals</h2>
