@@ -8,6 +8,7 @@ function Hero({ children, image, height }) {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     height: height,
+    maxHeight: '800px',
   };
 
   return (

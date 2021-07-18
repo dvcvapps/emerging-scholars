@@ -27,9 +27,9 @@ Item.defaultProps = {
   onClick: () => {},
 };
 
-function Main({ children, bgColor }) {
+function Main({ children, classNames }) {
   return (
-    <div className={`d-flex align-items-center p-1 ${bgColor}`}>
+    <div className={`container-xxl d-flex align-items-center p-1 ${classNames}`}>
       {children}
     </div>
   );
@@ -38,16 +38,16 @@ Main.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node]),
-  bgColor: PropTypes.string,
+  classNames: PropTypes.string,
 };
 Main.defaultProps = {
   children: [],
-  bgColor: '',
+  classNames: '',
 };
 
-function Mobile({ children, bgColor }) {
+function Mobile({ children, classNames }) {
   return (
-    <div className={`bg-primary border-top ${bgColor}`}>
+    <div className={`bg-primary border-top ${classNames}`}>
       {children}
     </div>
   );
@@ -56,16 +56,16 @@ Mobile.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node]),
-  bgColor: PropTypes.string,
+  classNames: PropTypes.string,
 };
 Mobile.defaultProps = {
   children: [],
-  bgColor: '',
+  classNames: '',
 };
 
-function Navbar({ children }) {
+function Navbar({ children, classNames }) {
   return (
-    <div className="fixed-top">
+    <div className={`fixed-top ${classNames}`}>
       {children}
     </div>
   );
@@ -75,10 +75,12 @@ const propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node]),
+  classNames: PropTypes.string,
 };
 
 const defaultProps = {
   children: [],
+  classNames: '',
 };
 
 Navbar.propTypes = propTypes;

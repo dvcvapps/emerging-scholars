@@ -54,10 +54,8 @@ function MainNavbar() {
   };
 
   return (
-    <Navbar>
-      <Navbar.Main
-        bgColor={`${!nav ? 'bg-primary-trans' : 'bg-transparent'}`}
-      >
+    <Navbar classNames={`${!nav ? 'bg-primary-trans' : 'bg-transparent'}`}>
+      <Navbar.Main>
         <Navbar.Item
           text={NAVBAR_SCHEMA.home.text}
           href={NAVBAR_SCHEMA.home.href}
@@ -86,7 +84,7 @@ function MainNavbar() {
       { mobile && open
         && (
         <Navbar.Mobile
-          bgColor={`${!nav ? 'bg-primary-trans' : 'bg-transparent'}`}
+          classNames={`${!nav ? 'bg-primary-trans' : 'bg-transparent'}`}
         >{_.map(NAVBAR_SCHEMA.items, (item) => (
           mobile && open && (
           <Navbar.Item

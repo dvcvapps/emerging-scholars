@@ -57,7 +57,7 @@ function Home() {
           </div>
         </div>
         <Fade>
-          <div className="p-3">
+          <div className="">
             <h2 className="text-center open-sans-font text-secondary">Goals</h2>
             <div className="row text-primary">
               <div className="col-lg-3 mb-1">
