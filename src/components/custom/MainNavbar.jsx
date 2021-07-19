@@ -83,19 +83,18 @@ function MainNavbar() {
       </Navbar.Main>
       { mobile && open
         && (
-        <Navbar.Mobile
-          classNames={`${!nav ? 'bg-primary-trans' : 'bg-transparent'}`}
-        >{_.map(NAVBAR_SCHEMA.items, (item) => (
-          mobile && open && (
-          <Navbar.Item
-            key={item.text}
-            text={item.text}
-            href={item.href}
-            classNames="d-block h5 m-0 p-1 border-bottom nounderline text-white"
-            onClick={closeMenu}
-          />
-          )
-        ))}
+        <Navbar.Mobile>
+          {_.map(NAVBAR_SCHEMA.items, (item) => (
+            mobile && open && (
+            <Navbar.Item
+              key={item.text}
+              text={item.text}
+              href={item.href}
+              classNames="d-block h5 m-0 p-1 border-bottom nounderline text-white"
+              onClick={closeMenu}
+            />
+            )
+          ))}
         </Navbar.Mobile>
         )}
     </Navbar>

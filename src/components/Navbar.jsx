@@ -47,7 +47,7 @@ Main.defaultProps = {
 
 function Mobile({ children, classNames }) {
   return (
-    <div className={`bg-primary border-top ${classNames}`}>
+    <div className={`border-top ${classNames}`}>
       {children}
     </div>
   );
