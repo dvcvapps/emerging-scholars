@@ -12,7 +12,7 @@ import { NAVBAR_SCHEMA } from '../../schemas/navbar_schema';
 import useWindowSize from '../../hooks/useWindowSize';
 import useScrollPosition from '../../hooks/useScrollPosition';
 
-const WIDTH_BREAKPOINT = 576;
+const WIDTH_BREAKPOINT = 768;
 const SCROLL_BREAKPOINT = 50;
 
 function MainNavbar() {
@@ -41,7 +41,7 @@ function MainNavbar() {
       setOpen(!open);
     };
     return (
-      <button type="button" className="d-sm-none btn btn-secondary m-2" onClick={setNavColor}>
+      <button type="button" className="d-md-none btn btn-secondary m-2" onClick={setNavColor}>
         {open
           ? <FontAwesomeIcon className="text-white" icon={['fa', 'times']} />
           : <FontAwesomeIcon className="text-white" icon={['fa', 'bars']} />}
