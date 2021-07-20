@@ -30,7 +30,7 @@ function Home() {
         <div className="row p-0 m-0">
           <div className="col-sm-6 d-flex justify-content-center align-items-center flex-column bg-primary">
             <Fade>
-              <h2 className="text-center open-sans-font text-secondary text-white mt-3">Mission</h2>
+              <h1 className="text-center open-sans-font text-secondary mt-3">Mission</h1>
               <p className="text-center text-white mb-3 w-75">
                 To increase and promote inclusivity of students in pursuing
                 (degrees/careers) science, technology, engineering and mathematics (STEM).
@@ -58,7 +58,7 @@ function Home() {
         </div>
         <div className="">
           <Fade>
-            <h2 className="text-center open-sans-font text-secondary">Goals</h2>
+            <h1 className="text-center open-sans-font text-primary">Goals</h1>
             <div className="row text-primary m-0 p-0">
               <div className="col-lg-3 mb-1">
                 <Card
@@ -98,7 +98,7 @@ function Home() {
         <div className="d-flex justify-content-center align-items-center flex-column">
           <div className="col-md-6">
             <Fade>
-              <h2 className="text-center open-sans-font text-secondary">Boost Underrepresentation in STEM</h2>
+              <h1 className="text-center open-sans-font text-primary">Boost Underrepresentation in STEM</h1>
               <ul className="text-primary">
                 <li>Identify Role Models That Students can Relate To</li>
                 <li>To Encourage students in STEM, Emphasize a Growth Mindset</li>
@@ -108,7 +108,7 @@ function Home() {
           </div>
           <div className="col-md-6">
             <Fade>
-              <h2 className="text-center open-sans-font text-secondary">Why is Basic Research important?</h2>
+              <h1 className="text-center open-sans-font text-primary">Why is Basic Research important?</h1>
               <ul className="text-primary">
                 <li>Helps identify problems</li>
                 <li>Collect informational resources to address problem</li>
@@ -121,7 +121,7 @@ function Home() {
         </div>
         <Fade>
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <h2 className="text-center open-sans-font text-secondary">Future Leaders and Scholars</h2>
+            <h1 className="text-center open-sans-font text-primary">Future Leaders and Scholars</h1>
             <p className="text-primary">What will you discover?</p>
           </div>
         </Fade>
