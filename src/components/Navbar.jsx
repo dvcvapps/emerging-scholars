@@ -2,25 +2,68 @@
 /* eslint-disable consistent-return */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
-function Item({
+function HomeItem({
   text, href, classNames, onClick,
 }) {
-  const mainClasses = `${classNames}`;
   return (
-    <Link onClick={onClick} className={mainClasses} to={href}>
+    <Link onClick={onClick} className={classNames} to={href}>
       {text}
     </Link>
   );
 }
-Item.propTypes = {
+HomeItem.propTypes = {
   classNames: PropTypes.string,
   text: PropTypes.string,
   href: PropTypes.string,
   onClick: () => {},
 };
-Item.defaultProps = {
+HomeItem.defaultProps = {
+  classNames: '',
+  text: '',
+  href: '',
+  onClick: () => {},
+};
+
+function MenuItem({
+  text, href, classNames, onClick,
+}) {
+  return (
+    <NavLink activeClassName="border-primary border-bottom" onClick={onClick} className={classNames} to={href}>
+      {text}
+    </NavLink>
+  );
+}
+MenuItem.propTypes = {
+  classNames: PropTypes.string,
+  text: PropTypes.string,
+  href: PropTypes.string,
+  onClick: () => {},
+};
+MenuItem.defaultProps = {
+  classNames: '',
+  text: '',
+  href: '',
+  onClick: () => {},
+};
+
+function MobileItem({
+  text, href, classNames, onClick,
+}) {
+  return (
+    <NavLink activeClassName="" onClick={onClick} className={classNames} to={href}>
+      {text}
+    </NavLink>
+  );
+}
+MobileItem.propTypes = {
+  classNames: PropTypes.string,
+  text: PropTypes.string,
+  href: PropTypes.string,
+  onClick: () => {},
+};
+MobileItem.defaultProps = {
   classNames: '',
   text: '',
   href: '',
@@ -86,8 +129,10 @@ const defaultProps = {
 Navbar.propTypes = propTypes;
 Navbar.defaultProps = defaultProps;
 
-Navbar.Item = Item;
+Navbar.HomeItem = HomeItem;
+Navbar.MenuItem = MenuItem;
 Navbar.Mobile = Mobile;
+Navbar.MobileItem = MobileItem;
 Navbar.Main = Main;
 
 export default Navbar;

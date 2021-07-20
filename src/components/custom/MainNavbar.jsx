@@ -56,7 +56,7 @@ function MainNavbar() {
   return (
     <Navbar classNames={`${!nav ? 'bg-primary-trans' : 'bg-transparent'}`}>
       <Navbar.Main>
-        <Navbar.Item
+        <Navbar.HomeItem
           text={NAVBAR_SCHEMA.home.text}
           href={NAVBAR_SCHEMA.home.href}
           classNames="h1 d-block text-secondary m-1 nounderline me-auto"
@@ -64,16 +64,16 @@ function MainNavbar() {
         />
         { _.map(NAVBAR_SCHEMA.items, (item) => (
           !mobile && (
-          <Navbar.Item
+          <Navbar.MenuItem
             key={item.text}
             text={item.text}
             href={item.href}
-            classNames="h5 d-block text-white p-1 nounderline"
+            classNames="h5 text-white d-block p-1 nounderline"
             onClick={closeMenu}
           />
           )
         ))}
-        <Navbar.Item
+        <Navbar.MenuItem
           text={NAVBAR_SCHEMA.donate.text}
           href={NAVBAR_SCHEMA.donate.href}
           classNames="h5 text-warning p-1 nounderline"
@@ -86,7 +86,7 @@ function MainNavbar() {
         <Navbar.Mobile>
           {_.map(NAVBAR_SCHEMA.items, (item) => (
             mobile && open && (
-            <Navbar.Item
+            <Navbar.MobileItem
               key={item.text}
               text={item.text}
               href={item.href}
