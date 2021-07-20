@@ -31,7 +31,7 @@ function Footer({
     setYear(new Date().getFullYear());
   }, []);
   return (
-    <div className="mt-1 pt-5 pb-5 bg-grullo text-light no-list-style">
+    <div className="mt-1 pt-5 pb-5 bg-primary text-light no-list-style">
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-xs-12">
